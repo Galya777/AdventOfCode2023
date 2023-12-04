@@ -21,11 +21,11 @@ class HelloWorld {
        int sum=0;
        int num=0;
        for(int i=0; i<data.length; ++i){
-      for(int j=0; j<data[i].length; ++j){
-          int counter=1;
+      for(int j=data[i].length; j>0; --j){
+          int counter=0;
            if(isDigit(data[i][j])){
                num= Character.getNumericValue(data[i][j])+10*counter;
-               --counter;
+               ++counter;
            }
        }
        sum+=num;
