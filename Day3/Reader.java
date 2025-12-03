@@ -10,7 +10,7 @@ public class Reader {
     public static List<String> readFromFile() {
         List<String> calibrations = new ArrayList<>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("Day5/input.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("Day6/input.txt"));
             String line;
             while ((line = reader.readLine()) != null) {
                 calibrations.add(line);
